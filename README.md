@@ -14,6 +14,9 @@ export GOOGLE_CLOUD_KEYFILE_JSON="/Users/username/gcp/serviceaccount.json"
 ```
 * enable compute-engine API using GCP console
 
+## requirements
+* Terraform v 0.12.x
+
 ## deploy
 * start new shell
 * enter project name when prompted or use tfvars file
