@@ -12,14 +12,15 @@
 ```
 export GOOGLE_CLOUD_KEYFILE_JSON="/Users/username/gcp/serviceaccount.json"
 ```
+* start new shell
 * enable compute-engine API using GCP console
+* duplicate the terraform.tfvars.example file
+* rename without the .example suffix and enter your GCP project name
 
 ## requirements
 * Terraform v 0.12.x
 
 ## deploy
-* start new shell
-* enter project name when prompted or use tfvars file
 
 ```
 terraform init

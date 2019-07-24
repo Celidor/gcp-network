@@ -1,6 +1,7 @@
 resource "google_compute_network" "app_vpc1" {
   name                            = "${var.app}-vpc-${local.env}"
   auto_create_subnetworks         = false
+  delete_default_routes_on_create = true
 }
 
 resource "google_compute_subnetwork" "frontend_subnet1" {
