@@ -4,10 +4,10 @@ resource "google_compute_address" "appserver" {
 
 resource "google_compute_instance" "appserver" {
   name         = "${var.app}-frontend-${var.region}-${local.env}"
-  machine_type = "${var.machine_type}"
-  zone         = "${var.zone}"
+  machine_type = var.machine_type
+  zone         = var.zone
 
-  tags = ["appserver", "${local.env}"]
+  tags = ["appserver", local.env]
 
   boot_disk {
     initialize_params {
@@ -20,10 +20,10 @@ resource "google_compute_instance" "appserver" {
   }
 
   network_interface {
-    subnetwork = "${google_compute_subnetwork.frontend_subnet1.self_link}"
+    subnetwork = google_compute_subnetwork.frontend_subnet1.self_link
 
     access_config {
-        nat_ip = "${google_compute_address.appserver.address}"
+        nat_ip = google_compute_address.appserver.address
     }
   }
 
