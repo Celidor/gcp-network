@@ -11,3 +11,6 @@ terraform.tfstate.d/
 # Credentials
 backend.tf
 *.tfvars
+
+# IDE
+.idea/
