@@ -5,6 +5,8 @@
 * virtual machine
 * firewall rules
 
+![Alt text](gcp-network.png?raw=true "GCP Network")
+
 ## set up project and credentials
 * create GCP project
 * create terraform service account with appropriate IAM role for deployment
