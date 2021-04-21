@@ -22,5 +22,5 @@ variable "region_2" {
 }
 
 variable "machine_type" {
-    default = "n1-standard-1"
+    default = "e2-micro"
 }

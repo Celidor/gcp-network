@@ -15,10 +15,6 @@ resource "google_compute_instance" "appserver" {
     }
   }
 
-  // Local SSD disk
-  scratch_disk {
-  }
-
   network_interface {
     subnetwork = google_compute_subnetwork.frontend_subnet1.self_link
 
